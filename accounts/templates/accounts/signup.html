@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <Title>Projects</title>
+    <title>Projects</title>
 </head>
 <body>
     <main>
         <div>
-            <h1>Login</h1>
+            <h1>Signup</h1>
             <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button>Login</button>
-            </form>
+                <button>Signup</button>
         </div>
     </main>
 </body>
