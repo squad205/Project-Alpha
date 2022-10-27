@@ -21,7 +21,7 @@
                     <tbody>
                         <tr>
                             <td><a href="{% url 'show_project' project.id %}">{{ project.name }}</td>
-                            <td>{{ project.task.all|length }}</td>
+                            <td>{{ project.tasks.all|length }}</td>
                         </tr>
                     </tbody>
                 {% endfor %}
