@@ -23,6 +23,7 @@ def create_task(request):
 
     return render(request, "tasks/create.html", context)
 
+
 @login_required
 def task_list(request):
     tasks = Task.objects.filter(assignee=request.user)
